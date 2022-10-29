@@ -1,4 +1,8 @@
-<img align="center" src="https://i.imgur.com/lJlVzCQ.png" width="20%">
+<p align="center">
+    <br />
+    <img src="https://i.imgur.com/lJlVzCQ.png" width="20%">
+    <br />
+</p>
 
 ## Routing
 
