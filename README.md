@@ -1,9 +1,7 @@
-<center>
-    <img src="https://i.imgur.com/lJlVzCQ.png">
-</center>
+<img align="center" src="https://i.imgur.com/lJlVzCQ.png" width="20%">
 
 ## Routing
-#
+
 ### Basic Routing
 ```php
 $router->get('/', function () {
@@ -18,7 +16,6 @@ $router->get('/user/{id}', function ($id) {
 ```
 
 ## Controllers
-#
 ### Basic controllers
 ```php
 <?php
