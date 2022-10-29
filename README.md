@@ -50,3 +50,40 @@ class MainController extends Controller
     }
 }
 ```
+
+## Models
+### Basic models
+```php
+<?php
+
+namespace App\src\Models;
+
+use App\src\Core\Model;
+
+class SampleModel extends Model
+{
+    protected $id;
+
+    public function __construct()
+    {
+        $this->table = 'table_name';
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+}
+```
+
+### Call models 
+```php
+$articleModel = new ArticleModel();
+$articleModel->findAll();
