@@ -58,7 +58,7 @@ class MainController extends Controller
 
 namespace App\src\Models;
 
-use App\src\Core\Model;
+use Itomori\Core\Model;
 
 class SampleModel extends Model
 {
