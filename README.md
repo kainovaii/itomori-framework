@@ -8,6 +8,11 @@
     <img style="margin-left: 10px;" src="https://img.shields.io/badge/License-MIT-green.svg" />
 </p>
 
+## Installing
+```
+composer create-project itomori/itomori
+```
+
 ## Routing
 
 ### Basic Routing
