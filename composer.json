@@ -1,5 +1,6 @@
 {
     "name": "kainovaii/kaino-framework",
+    "type": "project",
     "autoload": {
         "psr-4": {
             "App\\src\\": "src/",
