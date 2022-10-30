@@ -91,3 +91,14 @@ class SampleModel extends Model
 ```php
 $articleModel = new ArticleModel();
 $articleModel->findAll();
+```
+
+## CLI
+### Create controller
+```
+php itomori make -c controller_name
+```
+### Create model
+```
+php itomori make -m model_namme
+```
