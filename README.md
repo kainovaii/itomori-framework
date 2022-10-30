@@ -3,6 +3,10 @@
     <img src="https://i.imgur.com/lJlVzCQ.png" width="20%">
     <br />
 </p>
+<p align="center">
+    <img src="https://img.shields.io/badge/Version-1.0.1-green.svg" />
+    <img style="margin-left: 10px;" src="https://img.shields.io/badge/License-MIT-green.svg" />
+</p>
 
 ## Routing
 
