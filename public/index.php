@@ -1,10 +1,10 @@
 <?php
 
-use Itomori\Autoloader;
-use Itomori\Core\Main;
+use Obsidian\Core\Main;
+use Obsidian\Autoloader;
 
-require_once '../vendor/kainovaii/itomori/src/core/Main.php';
-require_once '../vendor/kainovaii/itomori/src/Autoloader.php';
+require_once '../vendor/itomori/obsidian/src/core/Main.php';
+require_once '../vendor/itomori/obsidian/src/Autoloader.php';
 
 define('ROOT', dirname(__DIR__));
 

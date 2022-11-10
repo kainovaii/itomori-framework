@@ -3,8 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "App\\src\\": "src/",
-            "App\\bin\\": "bin/"
+            "App\\src\\": "src/"
         }
     },
     "authors": [
@@ -14,6 +13,6 @@
         }
     ],
     "require": {
-        "kainovaii/itomori": "@dev"
+        "itomori/obsidian": "@dev"
     }
 }

@@ -1,23 +1,14 @@
 <?php
 
-namespace App\src\Routes;
-
-use Itomori\Core\Router;
-use Itomori\Core\Session;
+use Obsidian\Core\Router;
 use App\src\Http\Controllers\MainController;
 
-class Web
-{
-    public function __construct(Router $router)
-    {
-        $this->session = new Session();
+/*
+|------------------------------------------------
+| Web Routes
+|------------------------------------------------
+*/
 
-        $this->mainController = new MainController();
-
-        $router->get('/', function () {
-            $this->mainController->index();
-        });
-
-        $router->run();
-    }
-}
+Router::get('/', function () {
+    MainController::index();
+});

@@ -2,12 +2,12 @@
 
 namespace App\src\Http\Controllers;
 
-use Itomori\Core\Controller;
+use Obsidian\Core\Controller;
 
 class MainController extends Controller
 {
-    public function index()
+    public static function index()
     {
-        $this->render('index');
+        self::view('index');
     }
 }
