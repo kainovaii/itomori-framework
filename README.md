@@ -21,14 +21,14 @@ composer create-project itomori/itomori
 
 ### Basic Routing
 ```php
-$router->get('/', function () {
-    $this->mainController->index();
+Router::get('/', function () {
+    MainController::index();
 });
 ```
 ### Route Parameters
 ```php
-$router->get('/user/{id}', function ($id) {
-    $this->mainController->index($id);
+Router::get('/user/{id}', function ($id) {
+    MainController::index($id);
 });
 ```
 
@@ -39,13 +39,13 @@ $router->get('/user/{id}', function ($id) {
 
 namespace App\src\Http\Controllers;
 
-use Itomori\Core\Controller;
+use Obsidian\Core\Controller;
 
 class MainController extends Controller
 {
-    public function index()
+    public static function index()
     {
-        $this->render('index');
+        self::view('index');
     }
 }
 ```
@@ -57,15 +57,16 @@ class MainController extends Controller
 
 namespace App\src\Http\Controllers;
 
-use Itomori\Core\Controller;
+use Obsidian\Core\Controller;
 
 class MainController extends Controller
 {
     public function __invoke()
     {
-        $this->render('index');
+        self::view('index');
     }
 }
+
 ```
 
 ## Models
@@ -75,7 +76,7 @@ class MainController extends Controller
 
 namespace App\src\Models;
 
-use Itomori\Core\Model;
+use Obsidian\Core\Model;
 
 class SampleModel extends Model
 {
