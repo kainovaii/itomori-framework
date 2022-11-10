@@ -18,6 +18,16 @@ composer create-project itomori/itomori
 - [ ] Authentication
 
 ## Routing
+### Available Methods
+```php
+Route::get($uri, $callback);
+Route::post($uri, $callback);
+Route::put($uri, $callback);
+Route::delete($uri, $callback);
+Route::options($uri, $callback);
+Route::patch($uri, $callback);
+Route::head($uri, $callback);
+```
 
 ### Basic Routing
 ```php
