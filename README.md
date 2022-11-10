@@ -10,7 +10,7 @@
 
 ## Installing
 ```
-composer create-project itomori/itomori
+composer create-project itomori/itomori=1.0.3
 ```
 
 ## Todos
