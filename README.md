@@ -111,6 +111,12 @@ class SampleModel extends Model
 }
 ```
 
+### Call models 
+```php
+$articleModel = new ArticleModel();
+$articleModel->findAll();
+```
+
 ## Migration
 ### Example migration
 ```php
@@ -136,12 +142,6 @@ class CreateArticleTable extends Migration
     }
 }
 
-```
-
-### Call models 
-```php
-$articleModel = new ArticleModel();
-$articleModel->findAll();
 ```
 
 ## CLI
