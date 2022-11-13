@@ -1,6 +1,6 @@
 <?php
 
-use Obsidian\Core\Router;
+use Obsidian\Routing\Router;
 use App\src\Http\Controllers\MainController;
 
 /*
