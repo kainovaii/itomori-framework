@@ -10,12 +10,13 @@
 
 ## Installing
 ```
-composer create-project itomori/itomori=1.0.3
+composer create-project itomori/itomori
 ```
 
 ## Todos
 - [ ] Middleware
 - [ ] Authentication
+- [X] Migration
 
 ## Routing
 ### Available Methods
@@ -110,6 +111,33 @@ class SampleModel extends Model
 }
 ```
 
+## Migration
+### Example migration
+```php
+<?php
+
+namespace App\src\Migrations;
+
+use Obsidian\Database\InputType;
+use Obsidian\Database\Migrations\Migration;
+
+class CreateArticleTable extends Migration
+{
+    public static function run()
+    {
+        self::table('article');
+
+        self::create([
+            InputType::increments('id'),
+            InputType::string('title'),
+            InputType::text('content'),
+            InputType::int('author'),
+        ]);
+    }
+}
+
+```
+
 ### Call models 
 ```php
 $articleModel = new ArticleModel();
@@ -117,11 +145,11 @@ $articleModel->findAll();
 ```
 
 ## CLI
-### Create controller
+### Create migration file
 ```
-php itomori make -c controller_name
+php itomori orm -make:migration migration_file
 ```
-### Create model
+### Start migration
 ```
-php itomori make -m model_namme
+php itomori orm -start:migrate migration_file
 ```
