@@ -2,7 +2,7 @@
 
 namespace App\src\Http\Controllers;
 
-use Obsidian\Core\Controller;
+use Obsidian\Controllers\Controller;
 
 class MainController extends Controller
 {
